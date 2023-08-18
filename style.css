@@ -56,10 +56,13 @@ body {
 
 .btnEdit {
     background-color: cornflowerblue;
+    margin-left: 5px;
 }
 
 .btnClear {
     background-color: red;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 

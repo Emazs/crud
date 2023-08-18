@@ -14,7 +14,6 @@ let inputDescription = document.querySelector('.inputDescription');
 let inputPrice = document.querySelector('.inputPrice');
 let inputStock = document.querySelector('.inputStock');
 
-let id = 1;
 
 let tbody = document.querySelector('.tBody');
 
@@ -23,6 +22,7 @@ buttonModal.addEventListener('click', () => {
 })
 
 buttonEnterModal.addEventListener('click', (event) => {
+    let id = Date.now();
     if ((inputDescription.value == '') && (inputPrice.value == '') && (inputStock.value == '')) return;
 
     let addTr = document.createElement('tr');
@@ -68,7 +68,7 @@ buttonEnterModal.addEventListener('click', (event) => {
     eliminatedELement();
     deleteElement(addButtonClear);
     editElement(addButtonEdit, addId, addDescription, addPrice, addStock);
-    id = id + 1;
+    //id = id + 1;
 })
 
 function deleteElement(addButtonClear, addId) {
@@ -115,10 +115,8 @@ function alerta(addButtonClear, addId) {
     let opcion = confirm("Seguro que quiere eliminar el elemento");
     if (opcion == true) {
         addButtonClear.parentNode.parentNode.remove();
-        id = id - 1;
+        //id = id - 1;
         addId.textContent = id;
-    } else {
-
     }
 }
 
