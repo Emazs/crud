@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>CRUD </title>
+    </head>
+
+    <body>
+        
+        <div class="contentTable">
+            <button id="btnModal">Create</button>
+            <table class="tableContent">
+                <thead>
+                    <th>Id</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </thead>
+    
+                <tbody class="tBody">
+                </tbody>
+    
+            </table>
+        </div>
+
+        <div id="myModal" class="modalContainer">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h2>Articulos</h2>
+                <div class="inputs">
+                    <label for="inputDescription">Description.</label>
+                    <input type="text" name="inputDescription" class="inputDescription">
+                </div>
+                <div class="inputs">
+                    <label for="inputPrice">Price.</label>
+                    <input type="number" name="inputPrice" class="inputPrice">
+                </div>
+                <div class="inputs">
+                    <label for="inputStock">Stock.</label>
+                    <input type="number" name="inputStock" class="inputStock">
+                </div>
+                <div class="btnEnter"><button id="btnEnterModal">Create</button></div>
+                <div class="btnEnter"><button id="btnActualizarModal">Actualizar</button></div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
